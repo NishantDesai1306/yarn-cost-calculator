@@ -61,7 +61,7 @@ export default function MyAppBar(props) {
 		<ElevationScroll {...props}>
 			<AppBar position='fixed' elevation={0}>
 				<Toolbar>
-					<div className="d-flex align-items-center">
+					<div className="d-flex align-items-center flex-grow-1">
 						<div className={classes.logoContainer}>
 							<img alt="Logo" className={classes.logo} src={Logo} />
 						</div>
@@ -74,7 +74,7 @@ export default function MyAppBar(props) {
 						<Button
 							onClick={() => window.showInstallPrompt()}
 							color='inherit'
-							className='install-handle d-none mx-3'
+							className='install-handle d-none mx-3 text-light'
 							startIcon={<Icon>get_app</Icon>}
 						>
 							Install

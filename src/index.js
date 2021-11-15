@@ -11,7 +11,7 @@ import './event-listeners';
 import 'bootstrap-utilities/bootstrap-utilities.css';
 import 'bootstrap-grid-only-css/dist/css/bootstrap-grid.min.css';
 
-if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
+if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     const wb = new Workbox('/sw.js');
 
