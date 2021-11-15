@@ -63,7 +63,7 @@ export default function MyAppBar(props) {
 				<Toolbar>
 					<div className="d-flex align-items-center">
 						<div className={classes.logoContainer}>
-							<img className={classes.logo} src={Logo} />
+							<img alt="Logo" className={classes.logo} src={Logo} />
 						</div>
 						<Typography variant='h6' className={classes.title}>
 							Cost Calculator

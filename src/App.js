@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Box, Button, Fab, Grid, Icon, makeStyles, Paper, Tab, Tabs, Tooltip, useMediaQuery, useTheme } from '@material-ui/core';
+import { Box, Button, Fab, Grid, Icon, makeStyles, Paper, Tab, Tabs, Tooltip } from '@material-ui/core';
 
 import AppBar from './AppBar';
 import Warps, { DEFAULT_WARP } from './Warps';
@@ -50,7 +50,6 @@ function TabPanel(props) {
 
 export default function App() {
   const classes = useStyles();
-  const theme = useTheme();
   const [value, setValue] = useState(0);
   const [showSolution, setShowSolution] = useState(false);
   const [wefts, setWefts] = useState([ DEFAULT_WEFT ]);
@@ -64,8 +63,6 @@ export default function App() {
     setWarps([]);
     setWefts([]);
   }, []);
-
-  const isDesktop = useMediaQuery(theme.breakpoints.up('xl'));
 
   return (
     <div className='d-flex flex-column align-items-center bootstrap-wrapper'>
