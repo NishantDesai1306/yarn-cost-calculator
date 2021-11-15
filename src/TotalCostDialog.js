@@ -129,7 +129,7 @@ export default function FullScreenDialog({
 
 			<Grid
 				container
-				className="w-100 d-flex justify-content-center p-3"
+				className="w-100 d-flex justify-content-center p-3 flex-grow-1"
 				style={{ background: theme.palette.background.default }}
 			>
         <Grid item xs={12} md={8} lg={6}>	
