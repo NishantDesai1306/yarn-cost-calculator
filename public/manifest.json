@@ -2,7 +2,7 @@
   "name": "Yarn Cost Calculator",
   "short_name": "Yarn Cost Calculator",
   "theme_color": "#D59472",
-  "background_color": "#D59472",
+  "background_color": "#FFF7F5",
   "display": "standalone",
   "Scope": "/",
   "start_url": "/",
